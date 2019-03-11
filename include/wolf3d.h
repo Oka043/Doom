@@ -32,6 +32,14 @@
 # define N 4
 # include <pthread.h>
 
+//vzamyati's validation
+
+typedef struct	s_buff
+{
+		char			*line;
+		struct s_buff	*next;
+}				t_buff;
+
 typedef struct		s_raycast
 {
 	double			pos_x;

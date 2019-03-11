@@ -110,8 +110,8 @@ void	ft_init_varible(t_wolf *wolf)
     wolf->fPlayerHeight = 130;
     wolf->fPlayerSpeed = 30;
     wolf->fProjectionPlaneYCenter = wolf->PROJECTIONPLANEHEIGHT/2;
-    wolf->MAP_WIDTH = 12;
-    wolf->MAP_HEIGHT = 12;
+    // wolf->MAP_WIDTH = 12;
+    // wolf->MAP_HEIGHT = 12;
     wolf->sdl.wall[0] = load_image("./texture/11.jpg");
     wolf->sdl.floor = load_image("./texture/floor.jpg");
     wolf->sdl.up = load_image("./texture/ceil.jpg");
