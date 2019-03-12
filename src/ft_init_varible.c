@@ -85,6 +85,31 @@ void    ft_view_float(float *f, int len)
         printf("%f\n", f[len]);
 }
 
+//vzamyati's validation
+
+
+            void        place_player(t_wolf *wolf)
+            {
+                int     i;
+                int     j;
+                int     v;
+
+                i = -1;
+                j = -1;
+                v = 0;
+                while (++i < wolf->MAP_HEIGHT)
+                {
+                    j = -1;
+                    while (++j < wolf->MAP_WIDTH)
+                        if (!(v = get_position(wolf, j, i)))
+                            break ;
+                    if (!v)
+                        break ;
+                }
+                wolf->fPlayerX = j + 0.5;
+                wolf->fPlayerY = i + 0.5;
+            }
+
 void	ft_init_varible(t_wolf *wolf)
 {
     wolf->loop = 1;
@@ -103,8 +128,9 @@ void	ft_init_varible(t_wolf *wolf)
     wolf->ANGLE0 = 0;
     wolf->ANGLE5 = (wolf->ANGLE30/6);
     wolf->ANGLE10 = (wolf->ANGLE5*2);
-    wolf->fPlayerX = 460;
-    wolf->fPlayerY = 610;
+    // wolf->fPlayerX = 460;
+    // wolf->fPlayerY = 610;
+    place_player(wolf);
     wolf->fPlayerArc = wolf->ANGLE0;
     wolf->fPlayerDistanceToTheProjectionPlane = 1024 / 2 / (tan((3.14 / 180) * 30));
     wolf->fPlayerHeight = 130;

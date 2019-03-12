@@ -12,32 +12,32 @@
 
 #include "wolf3d.h"
 
-char **creatMapArray(int width, int height)
-{
-	char **map;
+// char **creatMapArray(int width, int height)
+// {
+// 	char **map;
 
-	map = NULL;
-	map = (char**)malloc(sizeof(char *) * height + 1);
-	map[height] = NULL;
-	map[0]  = "WWWWWWWWWWWW";
-	map[1]  = "WOOOOOOOOOOW";
-	map[2]  = "WOOOOOOOOOOW";
-	map[3]  = "WOOOOOOOOOOW";
-	map[4]  = "WOOOOOOOOOOW";
-	map[5]  = "WOOOOQOOOOOW";
-	map[6]  = "WOOOOOOOOOOW";
-	map[7]  = "WOOOOOOOOOOW";
-	map[8]  = "WOOOOOOOOOOW";
-	map[9]  = "WOOOOOOOOOOW";
-	map[10] = "WOOOOOOOOOOW";
-	map[11] = "WWWWWWWWWWWW";
-	return (map);
-}
+// 	map = NULL;
+// 	map = (char**)malloc(sizeof(char *) * height + 1);
+// 	map[height] = NULL;
+// 	map[0]  = "WWWWWWWWWWWW";
+// 	map[1]  = "WOOOOOOOOOOW";
+// 	map[2]  = "WOOOOOOOOOOW";
+// 	map[3]  = "WOOOOOOOOOOW";
+// 	map[4]  = "WOOOOOOOOOOW";
+// 	map[5]  = "WOOOOQOOOOOW";
+// 	map[6]  = "WOOOOOOOOOOW";
+// 	map[7]  = "WOOOOOOOOOOW";
+// 	map[8]  = "WOOOOOOOOOOW";
+// 	map[9]  = "WOOOOOOOOOOW";
+// 	map[10] = "WOOOOOOOOOOW";
+// 	map[11] = "WWWWWWWWWWWW";
+// 	return (map);
+// }
 
-void  creatMap(t_wolf *wolf)
-{
-	wolf->fMap = creatMapArray(wolf->MAP_WIDTH, wolf->MAP_HEIGHT);
-}
+// void  creatMap(t_wolf *wolf)
+// {
+// 	wolf->fMap = creatMapArray(wolf->MAP_WIDTH, wolf->MAP_HEIGHT);
+// }
 
 float *newFloat(int len, float *tmp)
 {
