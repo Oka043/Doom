@@ -9,6 +9,7 @@ SRC = ./src/main.c \
 			./src/ft_fps.c \
 			#./src/ft_threads.c \
 			./src/jump.c \
+			./src/get_next_line.c \
 
 OBJECT = $(SRC:.c=.o)
 

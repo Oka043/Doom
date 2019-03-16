@@ -32,6 +32,14 @@
 # define N 4
 # include <pthread.h>
 
+//vzamyati's validation
+
+typedef struct	s_buff
+{
+		char			*line;
+		struct s_buff	*next;
+}				t_buff;
+
 typedef struct		s_raycast
 {
 	double			pos_x;
@@ -297,5 +305,7 @@ void	ft_threads(t_wolf *wolf);
 void	*ft_comand_threads(void *wolf);
 void    ft_render(t_wolf *wolf);
 void    ft_jump(t_wolf *wolf);
+
+int         get_position(t_wolf *wolf, int x, int y);
 
 #endif
