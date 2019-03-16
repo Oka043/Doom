@@ -565,7 +565,7 @@ void	ft_game(t_wolf *wolf)
         ft_render(wolf);
 	    render_texture(wolf);
 		keys(wolf);
-        ft_jump(wolf);
+//        ft_jump(wolf);
 	}
 	SDL_DestroyTexture(wolf->sdl.screen);
 	TTF_Quit();

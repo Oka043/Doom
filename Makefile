@@ -7,7 +7,7 @@ SRC = ./src/main.c \
 			./src/keys_2.c \
 			./src/ft_init_varible.c \
 			./src/ft_fps.c \
-			./src/ft_threads.c \
+			#./src/ft_threads.c \
 			./src/jump.c \
 
 OBJECT = $(SRC:.c=.o)
