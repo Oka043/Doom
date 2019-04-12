@@ -47,7 +47,7 @@ int main(int argc, char **argv)
 
 	/*Font*/
 	if (argc == 1) 
-		font_path = "beer_money.ttf";
+		font_path = "./fonts/beer_money.ttf";
 	else if (argc == 2)
 		font_path = argv[1];
 	else

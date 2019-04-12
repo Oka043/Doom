@@ -69,7 +69,7 @@ int main(int argc, char **argv)
 	//
 	/*Font*/
 	if (argc == 1) 
-		font_path = "opensans.ttf";
+		font_path = "./fonts/opensans.ttf";
 	else if (argc == 2)
 		font_path = argv[1];
 	else
