@@ -7,7 +7,7 @@
 # include <SDL.h>
 # include <math.h>
 # include <fcntl.h>
-# include "../libft/libft.h"
+# include "../libft/include/libft.h"
 
 # define BLACK		(Uint32)0x000000
 # define WHITE		(Uint32)0xFFFFFF
